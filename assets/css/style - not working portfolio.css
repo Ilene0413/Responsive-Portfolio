@@ -1,0 +1,713 @@
+/**
+    * Basic Portfolio stylesheet
+**/
+
+
+* {
+    box-sizing: border-box;
+          
+       }
+ /** 
+     * body style
+ **/
+ 
+ 
+ body {
+     font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
+     color: #777777;
+     background-image: url("../images/gravel/gravel.png");
+     border: #dddddd;
+     width: 960px;
+     margin-left: 300px;
+     margin-right: 300px;
+     margin-top: 0;
+     padding-bottom: 100px;
+         }
+ 
+ 
+ /** 
+     * Main header style
+ **/
+ 
+ #mainheader {
+     background: #ffffff;
+     border: #cccccc;  
+     font-family: 'Georgia', 'Times New Roman', Times, serif;  
+        }
+ 
+ /** 
+      *  name style
+ **/
+ 
+ #name {background: #4aaaa5;
+     color: white;
+     font-size: 18px;
+     font-weight: bold;
+     padding: 18px;
+     float: left;
+      }
+ 
+ /** 
+      * navigation bar style
+ **/
+ 
+ ul {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+     overflow: hidden;
+     }
+ 
+ li {
+     float: right;
+ }
+ 
+ li a {
+         display: block; 
+         padding: 10px;
+     }
+ 
+ /** 
+    * main content style
+ **/
+ #maincontent {
+     background: #ffffff;
+     border: #dddddd;
+      
+ }
+ /**
+   * under header style
+ **/
+ #pagecontent {
+     color: #4aaaa5;
+     background: #ffffff;
+     font-size: 20px;
+     margin-left: 20px;
+     margin-top: 20px;
+     margin-right: 20px;
+     padding-top: 20px;
+     clear: both; 
+       }
+ 
+ #bio-image {
+     width: 200px;
+     height: 200px;
+     margin-top: 10px;
+     margin-right: 20px;
+     margin-left: 20px;
+     float: left;
+ }
+ /** 
+ line color 
+ **/
+ hr {
+    background-color: #4aaaa5;
+    margin-left: 20px;
+    margin-right: 20px;
+     }
+ /** 
+     *paragraph style
+ **/
+ #para {
+     position: relative;
+     left: 10px;
+     font-size: 16px;
+     margin-right: 20px;
+     line-height: 2;
+     }
+ 
+ /** 
+     * form style
+ **/
+ #formcontent {
+     margin-top: 10px;
+     margin-right: 20px;
+     margin-left: 20px;
+         }
+ input {
+     width: 100%;
+ }
+ 
+ /** message box **/
+ textarea {
+     height: 150px;
+     width: 100%;
+ }
+ 
+ /**
+     * submit button style
+ **/
+ button {
+     background: #4aaaa5;
+     color: white;
+     padding: 10px;
+     margin-top: 10px;
+     margin-left: 20px;
+     margin-bottom: 10px;
+ }
+ /** 
+       *picture styles
+ **/
+ #pictures {
+     margin-top: 10px;
+     margin-left: 20px;
+     margin-right: 20px;
+     padding-bottom: 300px;
+         }
+ 
+ #piccontainer {
+     display: flex;
+     flex-direction: column;
+     flex-wrap: wrap;
+     height: 300px;
+     max-height: 400px;
+ }
+ div#piccontainer figure {
+     position: relative;
+     width: 33.3%
+     }
+ 
+ figcaption {
+     position: absolute;
+     bottom: 5px;
+     background-color: #4aaaa5;
+     color: white;
+     padding-top: 5px;
+     padding-bottom: 5px; 
+     margin-left: 0px;
+     margin-bottom: 5px;
+     width: 100%;
+     text-align: center;
+ }
+ 
+ figure img {
+     max-width: 100%;
+ }
+     
+ }
+ .txtbottomcenter {
+     position: absolute;
+     bottom: 5px;
+     background-color: #4aaaa5;
+     color: white;
+     padding-top: 5px;
+     padding-bottom: 5px; 
+     margin-left: 0px;
+     width: 100%;
+     text-align: center;
+     }
+ 
+ /**
+    * footer style
+ **/
+ 
+ footer {
+         background: #666666;
+         text-align: center;
+         font-size: 10px;
+         padding-top: 25px;
+         padding-bottom: 5px;
+         color: whitesmoke;
+         }
+ 
+ /** 
+     * extra footer line
+ **/
+ #footerline {
+     background: #4aaaa5;
+     padding: 3px; 
+     margin-bottom: -100;
+ }
+ /** 
+     * These rules take effect when the browser's width
+     is either 980px or less.
+ **/
+ @media screen and (max-width: 980px) {
+ /* The header will be fixed, body is left with wide margin */
+   
+     body {
+     margin-left: 20px;
+     margin-top: 20px;
+     padding-left: 20px;
+     padding-right: 400px;
+                     }
+ 
+  /** 
+     * Main header style
+ **/
+ 
+     #mainheader {
+       width: 60%; 
+       position: fixed;
+       top: 0;
+        }
+ 
+     a {
+     float: left;
+     display: block;
+     text-align: center;
+         }
+      #name {
+         margin-left: 20px;
+         float: left;
+             }
+ 
+      #maincontent {
+         margin-left: 20px;
+         padding-left: 20px;
+         margin-right: 100px;
+         overflow: hidden;
+          } 
+ 
+     #pagecontent {
+     margin-left: 20px;
+     margin-top: 20px;
+     padding-top: 20px;
+     margin-right: 100px;
+     overflow: hidden;
+     clear: both; 
+       }
+ 
+     #bio-image {
+     width: 100px;
+     height: 100px;
+     margin-top: 10px;
+     margin-left: 20px;
+     overflow: hidden
+     }
+ /** 
+ line color 
+ **/
+     hr {
+    background-color: #4aaaa5;
+    margin-left: 20px;
+    margin-right: 50px;
+    overflow: hidden; 
+     }
+ 
+     #para {
+     position: relative;
+     font-size: 12px;
+     margin-left: 20px;
+     margin-right: 100px;
+     line-height: 2;
+     margin-bottom: 10px;
+     padding: 0px;
+            }
+ /** 
+     * form style
+ **/
+ #formcontent {
+     margin-top: 70px;
+     margin-right: 0px;
+     margin-left: 30px;
+     overflow: hidden;
+     padding-left: 0px;
+         }
+ input {
+     width: 90%;
+     margin-top: 40px;
+     padding-top: 35px;
+ }
+     
+            /** message box **/
+     textarea {
+     height: 150px;
+     width: 90%;
+     margin-top: 40px;
+     }   
+      #pictures {
+             margin-top: 10px;
+             margin-left: 10px;
+             margin-right: 0px;
+             overflow: hidden;
+             padding-top: 10px;
+          }
+         
+         #piccontainer {
+             display: flex;
+             flex-direction: column;
+             flex-wrap: wrap;
+             height: 300px;
+             max-height: 400px;
+             width: 100%;
+         }
+         div#piccontainer figure {
+             position: relative;
+             width: 45%;
+             margin-top: 20px;
+             margin-left: 10px;
+             margin-right: 10px;
+             overflow:hidden;
+             }
+         
+         figcaption {
+             position: absolute;
+             bottom: 5px;
+             background-color: #4aaaa5;
+             color: white;
+             padding-top: 5px;
+             padding-bottom: 5px; 
+             margin-left: 0px;
+             margin-bottom: 5px;
+             width: 100%;
+             text-align: center;
+         }
+         
+         figure img {
+             max-width: 100%;
+         }
+     
+         .txtbottomcenter {
+             position: absolute;
+             bottom: 5px;
+             background-color: #4aaaa5;
+             color: white;
+             padding-top: 5px;
+             padding-bottom: 5px; 
+             margin-left: 0px;
+             width: 100%;
+             text-align: center;
+             }
+    }
+ /** 
+     *These rules take effect when the browser's width
+     is either 768px or less.
+ **/
+ @media screen and (max-width: 768px) {
+ /* The header will be fixed and body left and takes up screen*/
+ * The header will be fixed, body is left with wide margin */
+   
+     body {
+     margin-left: 10px;
+     margin-top: 20px;
+          }
+ 
+  /** 
+     * Main header style
+ **/
+     #mainheader {
+     width: 60%; 
+     position: fixed;
+     top: 0;
+      }
+ 
+     a {
+         float: left;
+         display: block;
+         text-align: center;
+      }
+ 
+    #name {
+       margin-left: 20px;
+       float: left;
+       font-size: 20px;
+       padding: 30px;
+     }
+ 
+     #maincontent {
+         margin-left: 25px;
+         padding-left: 0px;
+         margin-right: 0px; 
+         margin-top: 100px;
+          overflow: hidden;
+      } 
+ 
+     #pagecontent {
+     margin-left: 10px;
+     margin-top: 20px;
+     padding-top: 20px;
+     overflow: hidden;
+     clear: both; 
+       }
+ 
+     #bio-image {
+     width: 300px;
+     height: 300px;
+     margin-top: 10px;
+     margin-right: 0px;
+     margin-left: 20px;
+     overflow: hidden;
+     float: left;
+     }
+ /** 
+ line color 
+ **/
+     hr {
+      background-color: #4aaaa5;
+     margin-left: 10px;
+     margin-right: 0px;
+      }
+ 
+     #para {
+     position: relative;
+     font-size: 12px;
+     margin-left: 20px;
+     line-height: 2;
+     margin-bottom: 10px;
+     padding: 0px;
+     margin-right: 20px;
+            }
+ /** 
+     * form style
+ **/
+ #formcontent {
+     margin-top: 70px;
+     margin-right: 0px;
+     margin-left: 30px;
+     overflow: hidden;
+     padding-left: 0px;
+         }
+ input {
+     width: 90%;
+     margin-top: 30px;
+     padding-top: 30px;
+ }
+ 
+ /** message box **/
+ textarea {
+     height: 150px;
+     width: 90%;
+     margin-top: 55px;
+ }
+ #pictures {
+     margin-top: 10px;
+     margin-left: 10px;
+     margin-right: 0px;
+     overflow: hidden;
+     padding-top: 10px;
+     width: 100%;
+  }
+ 
+ #piccontainer {
+     display: flex;
+     flex-direction: column;
+     flex-wrap: wrap;
+     height: 300px;
+     max-height: 400px;
+    background-color: green; 
+ }
+ div#piccontainer figure {
+     position: relative;
+     width: 100%;
+     margin-top: 20px;
+     margin-left: 10px;
+     margin-right: 10px;
+     overflow:hidden;
+  background-color: blue; 
+     }
+ 
+ figcaption {
+     position: absolute;
+     bottom: 5px;
+     background-color: #4aaaa5;
+     color: white;
+     padding-top: 5px;
+     padding-bottom: 5px; 
+     margin-left: 0px;
+     margin-bottom: 5px;
+     width: 100%;
+     text-align: center;
+ }
+ 
+ figure img {
+     max-width: 100%;
+ }
+     
+ 
+ .txtbottomcenter {
+     position: absolute;
+     bottom: 5px;
+     background-color: #4aaaa5;
+     color: white;
+     padding-top: 5px;
+     padding-bottom: 5px; 
+     margin-left: 0px;
+     width: 100%;
+     text-align: center;
+     }
+ 
+ }
+ /** 
+     * These rules take effect when the browser's width
+     is either 640px or less.
+ **/
+ @media screen and (max-width: 640px) {
+ /* The header will be staic */
+ 
+ body {
+     margin-left: 10px;
+     margin-top: 20px;
+          }
+ 
+  /** 
+     * Main header style
+ **/
+ 
+     #mainheader {
+        overflow: hidden;
+               }
+ 
+      #name {
+         text-align: center;
+         width: 100%;
+         margin: 0px;
+         font-size: 30px;
+         overflow: hidden;
+             }
+     
+     #mainheader ul {
+         width: 100%;
+         overflow: hidden;
+         text-align: center;
+         padding-right: 175px;
+         padding-left: 0px;  
+         padding-bottom: 0px; 
+         padding-top: 10px;
+         font-size: 20px;
+         display: block;
+     }
+      #maincontent {
+         margin-left: 20px;
+         padding-left: 10px;
+         margin-right: 10px;
+         margin-top: 100px;
+        padding-top: 10px; 
+         width: 100%;
+          } 
+ 
+     #pagecontent {
+     margin-left: 10px;
+     margin-right: 10px;
+     margin-top: 50px;
+     clear: both;
+     padding-top: 20px; 
+     font-size: 30px;
+     overflow: hidden;
+     
+         }
+ 
+     #bio-image {
+     width: 300px;
+     height: 400px;
+     margin-top: 20px;
+     margin-right: 20px;
+     margin-left: 20px;
+     padding-right: 20px;
+     width: 95%;
+     clear: both;
+     
+     
+ }
+ /** 
+ line color 
+ **/
+     hr {
+    background-color: #4aaaa5;
+    margin-left: 10px;
+    margin-right: 20px;
+     }
+ 
+     #para {
+     font-size: 18px;
+     margin-left: 10px;
+     line-height: 2;
+     margin-bottom: 10px;
+     margin-right: 20px;
+     padding: 20px;
+     }
+ /** 
+     * form style
+ **/
+ #formcontent {
+     margin-top: 40px;
+     margin-right: 0px;
+     margin-left: 30px;
+     overflow: hidden;
+     padding-left: 0px;
+         }
+ input {
+     width: 90%;
+     margin-top: 35px;
+     padding-top: 30px;
+ }
+ 
+ /** message box **/
+ textarea {
+     height: 150px;
+     width: 90%;
+     margin-top: 80px;
+ }
+ 
+ /**
+     * submit button style
+ **/
+ button {
+     background: #4aaaa5;
+     color: white;
+     padding: 10px;
+     margin-top: 10px;
+     margin-left: 20px;
+     margin-bottom: 10px;
+ }
+ #pictures {
+     margin-top: 10px;
+     margin-left: 10px;
+     margin-right: 0px;
+     overflow: hidden;
+     padding-top: 10px;
+     background-color: yellow;
+  }
+ 
+ #piccontainer {
+     display: flex;
+     flex-direction: column;
+     flex-wrap: wrap;
+     height: 300px;
+     max-height: 400px;
+     width: 100%;
+     background-color: teal;
+ }
+ div#piccontainer figure {
+     position: relative;
+     width: 45%;
+     margin-top: 20px;
+     margin-left: 10px;
+     overflow:hidden;
+     background-color: brown;
+     }
+ 
+ figcaption {
+     position: absolute;
+     bottom: 5px;
+     background-color: #4aaaa5;
+     color: white;
+     padding-top: 5px;
+     padding-bottom: 5px; 
+     margin-left: 0px;
+     margin-bottom: 5px;
+     width: 100%;
+     text-align: center;
+ }
+ 
+ figure img {
+     max-width: 100%;
+ }
+ 
+ .txtbottomcenter {
+     position: absolute;
+     bottom: 5px;
+     background-color: #4aaaa5;
+     color: white;
+     padding-top: 5px;
+     padding-bottom: 5px; 
+     margin-left: 0px;
+     width: 100%;
+     text-align: center;
+     }
+ }
+ 
+ 
+ 
+ 
+ 

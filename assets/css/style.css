@@ -241,12 +241,12 @@ footer {
       position: fixed;
       top: 0;
        }
+
     a {
     float: left;
     display: block;
     text-align: center;
-    
-}
+        }
      #name {
         margin-left: 20px;
         float: left;
@@ -274,14 +274,14 @@ footer {
     margin-top: 10px;
     margin-left: 20px;
     overflow: hidden
-}
+    }
 /** 
 line color 
 **/
     hr {
    background-color: #4aaaa5;
    margin-left: 20px;
-   margin-right: 60px;
+   margin-right: 50px;
    overflow: hidden; 
     }
 
@@ -293,9 +293,83 @@ line color
     line-height: 2;
     margin-bottom: 10px;
     padding: 0px;
-    
            }
-
+/** 
+    * form style
+**/
+#formcontent {
+    margin-top: 70px;
+    margin-right: 0px;
+    margin-left: 30px;
+    overflow: hidden;
+    padding-left: 0px;
+        }
+input {
+    width: 90%;
+    margin-top: 40px;
+    padding-top: 35px;
+}
+    
+           /** message box **/
+    textarea {
+    height: 150px;
+    width: 90%;
+    margin-top: 40px;
+    }   
+     #pictures {
+            margin-top: 10px;
+            margin-left: 10px;
+            margin-right: 0px;
+            overflow: hidden;
+            padding-top: 10px;
+         }
+        
+        #piccontainer {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            height: 300px;
+            max-height: 400px;
+            width: 100%;
+        }
+        div#piccontainer figure {
+            position: relative;
+            width: 45%;
+            margin-top: 20px;
+            margin-left: 10px;
+            margin-right: 10px;
+            overflow:hidden;
+            }
+        
+        figcaption {
+            position: absolute;
+            bottom: 5px;
+            background-color: #4aaaa5;
+            color: white;
+            padding-top: 5px;
+            padding-bottom: 5px; 
+            margin-left: 0px;
+            margin-bottom: 5px;
+            width: 100%;
+            text-align: center;
+        }
+        
+        figure img {
+            max-width: 100%;
+        }
+    
+        .txtbottomcenter {
+            position: absolute;
+            bottom: 5px;
+            background-color: #4aaaa5;
+            color: white;
+            padding-top: 5px;
+            padding-bottom: 5px; 
+            margin-left: 0px;
+            width: 100%;
+            text-align: center;
+            }
+   }
 /** 
     *These rules take effect when the browser's width
     is either 768px or less.
@@ -312,16 +386,16 @@ line color
  /** 
     * Main header style
 **/
-#mainheader {
+    #mainheader {
     width: 60%; 
     position: fixed;
     top: 0;
      }
 
-  a {
-  float: left;
-  display: block;
-  text-align: center;
+    a {
+        float: left;
+        display: block;
+        text-align: center;
      }
 
    #name {
@@ -329,16 +403,15 @@ line color
       float: left;
       font-size: 20px;
       padding: 30px;
-          }
-    
+    }
 
-     #maincontent {
+    #maincontent {
         margin-left: 25px;
         padding-left: 0px;
         margin-right: 0px; 
         margin-top: 100px;
          overflow: hidden;
-         } 
+     } 
 
     #pagecontent {
     margin-left: 10px;
@@ -356,15 +429,15 @@ line color
     margin-left: 20px;
     overflow: hidden;
     float: left;
-}
+    }
 /** 
 line color 
 **/
     hr {
-   background-color: #4aaaa5;
-   margin-left: 10px;
-   margin-right: 0px;
-    }
+     background-color: #4aaaa5;
+    margin-left: 10px;
+    margin-right: 0px;
+     }
 
     #para {
     position: relative;
@@ -375,6 +448,85 @@ line color
     padding: 0px;
     margin-right: 20px;
            }
+/** 
+    * form style
+**/
+#formcontent {
+    margin-top: 70px;
+    margin-right: 0px;
+    margin-left: 30px;
+    overflow: hidden;
+    padding-left: 0px;
+        }
+input {
+    width: 90%;
+    margin-top: 30px;
+    padding-top: 30px;
+}
+
+/** message box **/
+textarea {
+    height: 150px;
+    width: 90%;
+    margin-top: 55px;
+}
+#pictures {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 0px;
+    overflow: hidden;
+    padding-top: 10px;
+    width: 100%;
+ }
+
+#piccontainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 300px;
+    max-height: 400px;
+   background-color: green; 
+}
+div#piccontainer figure {
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    overflow:hidden;
+ background-color: blue; 
+    }
+
+figcaption {
+    position: absolute;
+    bottom: 5px;
+    background-color: #4aaaa5;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px; 
+    margin-left: 0px;
+    margin-bottom: 5px;
+    width: 100%;
+    text-align: center;
+}
+
+figure img {
+    max-width: 100%;
+}
+    
+
+.txtbottomcenter {
+    position: absolute;
+    bottom: 5px;
+    background-color: #4aaaa5;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px; 
+    margin-left: 0px;
+    width: 100%;
+    text-align: center;
+    }
+
 }
 /** 
     * These rules take effect when the browser's width
@@ -393,12 +545,7 @@ body {
 **/
 
     #mainheader {
-    /** background-color: blue; **/
        overflow: hidden;
-    /** padding: 90px 10px; **/
-        
-       
-       
               }
 
      #name {
@@ -407,26 +554,18 @@ body {
         margin: 0px;
         font-size: 30px;
         overflow: hidden;
-        
-      
-       
-        
             }
     
     #mainheader ul {
         width: 100%;
         overflow: hidden;
         text-align: center;
-        /** background-color: purple; **/
         padding-right: 175px;
         padding-left: 0px;  
         padding-bottom: 0px; 
         padding-top: 10px;
         font-size: 20px;
         display: block;
-    
-        
-          
     }
      #maincontent {
         margin-left: 20px;
@@ -434,8 +573,6 @@ body {
         margin-right: 10px;
         margin-top: 100px;
        padding-top: 10px; 
-       
-     /**   background-color: green; **/
         width: 100%;
          } 
 
@@ -447,7 +584,6 @@ body {
     padding-top: 20px; 
     font-size: 30px;
     overflow: hidden;
-    background-color: yellow;
     
         }
 
@@ -479,12 +615,96 @@ line color
     margin-bottom: 10px;
     margin-right: 20px;
     padding: 20px;
-   
-
+    }
+    #pictures {
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 0px;
+        overflow: hidden;
+        padding-top: 10px;
+        background-color: yellow;
+     }
     
+    #piccontainer {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 300px;
+        max-height: 400px;
+        width: 100%;
+        background-color: teal;
+    }
+    div#piccontainer figure {
+        position: relative;
+        width: 45%;
+        margin-top: 20px;
+        margin-left: 10px;
+        overflow:hidden;
+        background-color: brown;
+        }
     
-           }
+    figcaption {
+        position: absolute;
+        bottom: 5px;
+        background-color: #4aaaa5;
+        color: white;
+        padding-top: 5px;
+        padding-bottom: 5px; 
+        margin-left: 0px;
+        margin-bottom: 5px;
+        width: 100%;
+        text-align: center;
+    }
+    
+    figure img {
+        max-width: 100%;
+    }
+    
+    .txtbottomcenter {
+        position: absolute;
+        bottom: 5px;
+        background-color: #4aaaa5;
+        color: white;
+        padding-top: 5px;
+        padding-bottom: 5px; 
+        margin-left: 0px;
+        width: 100%;
+        text-align: center;
+        }
+/** 
+    * form style
+**/
+#formcontent {
+    margin-top: 40px;
+    margin-right: 0px;
+    margin-left: 30px;
+    overflow: hidden;
+    padding-left: 0px;
+        }
+input {
+    width: 90%;
+    margin-top: 35px;
+    padding-top: 30px;
+}
 
+/** message box **/
+textarea {
+    height: 150px;
+    width: 90%;
+    margin-top: 80px;
+}
+
+/**
+    * submit button style
+**/
+button {
+    background: #4aaaa5;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
 
 }
 
