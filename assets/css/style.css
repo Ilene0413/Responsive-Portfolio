@@ -18,8 +18,7 @@ body {
     background-image: url("../images/gravel/gravel.png");
     border: #dddddd;
     width: 960px;
-    margin-left: 300px;
-    margin-right: 300px;
+margin: 0 auto;
     margin-top: 0;
     padding-bottom: 100px;
         }
@@ -43,7 +42,7 @@ body {
     color: white;
     font-size: 18px;
     font-weight: bold;
-    padding: 18px;
+    padding: 15px;
     float: left;
      }
 
@@ -71,6 +70,7 @@ li a {
    * main content style
 **/
 #maincontent {
+margin:20px auto;
     background: #ffffff;
     border: #dddddd;
      
@@ -184,7 +184,7 @@ figure img {
     max-width: 100%;
 }
     
-}
+
 .txtbottomcenter {
     position: absolute;
     bottom: 5px;
@@ -226,10 +226,8 @@ footer {
 /* The header will be fixed, body is left with wide margin */
   
     body {
-    margin-left: 20px;
-    margin-top: 20px;
-    padding-left: 20px;
-    padding-right: 400px;
+        max-width: 768px;
+    margin: 0 auto;
                     }
 
  /** 
@@ -237,8 +235,11 @@ footer {
 **/
 
     #mainheader {
-      width: 60%; 
-      position: fixed;
+        margin: 0 auto;
+
+/* margin: 20 auto; */
+      /* width: 60%;  */
+      /* position: fixed; */
       top: 0;
        }
 
@@ -253,9 +254,8 @@ footer {
             }
 
      #maincontent {
-        margin-left: 20px;
-        padding-left: 20px;
-        margin-right: 100px;
+
+margin: 20px auto;
         overflow: hidden;
          } 
 
@@ -375,20 +375,29 @@ input {
     is either 768px or less.
 **/
 @media screen and (max-width: 768px) {
-/* The header will be fixed and body left and takes up screen*/
-* The header will be fixed, body is left with wide margin */
+    /* The header will be fixed and body left and takes up screen*/
+/* * The header will be fixed, body is left with wide margin */ */
   
-    body {
-    margin-left: 10px;
+body {
+    max-width: 400px;
+    /* margin: 20 auto; */
+/* margin-left: 10px; */
+margin-top: 200px;
     margin-top: 20px;
          }
 
+
+        .thebody{
+            margin:0 auto;
+            max-width: 640px; 
+        }
  /** 
     * Main header style
 **/
     #mainheader {
-    width: 60%; 
-    position: fixed;
+
+    /* width: 60%;  */
+    /* position: fixed; */
     top: 0;
      }
 
@@ -402,14 +411,12 @@ input {
       margin-left: 20px;
       float: left;
       font-size: 20px;
-      padding: 30px;
+      padding: 15px;
     }
 
     #maincontent {
-        margin-left: 25px;
-        padding-left: 0px;
-        margin-right: 0px; 
-        margin-top: 100px;
+
+margin: 20px auto;
          overflow: hidden;
      } 
 
@@ -471,12 +478,10 @@ textarea {
     margin-top: 55px;
 }
 #pictures {
-    margin-top: 10px;
-    margin-left: 10px;
+    margin-top: 70px;
+    margin-left: 30px;
     margin-right: 0px;
     overflow: hidden;
-    padding-top: 10px;
-    width: 100%;
  }
 
 #piccontainer {
@@ -485,7 +490,7 @@ textarea {
     flex-wrap: wrap;
     height: 300px;
     max-height: 400px;
-   background-color: green; 
+    
 }
 div#piccontainer figure {
     position: relative;
@@ -494,7 +499,7 @@ div#piccontainer figure {
     margin-left: 10px;
     margin-right: 10px;
     overflow:hidden;
- background-color: blue; 
+  
     }
 
 figcaption {
@@ -536,8 +541,14 @@ figure img {
 /* The header will be staic */
 
 body {
-    margin-left: 10px;
+    max-width: 380px;
     margin-top: 20px;
+         }
+
+         .thebody{
+             margin:0 auto;
+            max-width: 420px;
+
          }
 
  /** 
@@ -557,21 +568,19 @@ body {
             }
     
     #mainheader ul {
-        width: 100%;
-        overflow: hidden;
-        text-align: center;
-        padding-right: 175px;
-        padding-left: 0px;  
+    
+      
+  
+       width:100%;
+        padding-right: 80px;
         padding-bottom: 0px; 
         padding-top: 10px;
         font-size: 20px;
-        display: block;
+      
     }
      #maincontent {
-        margin-left: 20px;
-        padding-left: 10px;
-        margin-right: 10px;
-        margin-top: 100px;
+
+        margin: 20px auto;
        padding-top: 10px; 
         width: 100%;
          } 
@@ -617,12 +626,11 @@ line color
     padding: 20px;
     }
     #pictures {
-        margin-top: 10px;
-        margin-left: 10px;
+        margin-top: 40px;
+        margin-left: 30px;
         margin-right: 0px;
         overflow: hidden;
-        padding-top: 10px;
-        background-color: yellow;
+        padding-left: 0px; 
      }
     
     #piccontainer {
@@ -632,7 +640,7 @@ line color
         height: 300px;
         max-height: 400px;
         width: 100%;
-        background-color: teal;
+        
     }
     div#piccontainer figure {
         position: relative;
@@ -640,7 +648,7 @@ line color
         margin-top: 20px;
         margin-left: 10px;
         overflow:hidden;
-        background-color: brown;
+        
         }
     
     figcaption {
